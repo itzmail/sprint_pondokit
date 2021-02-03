@@ -1,0 +1,10 @@
+Program MenghitungLuas
+
+Deklarasi
+{Diketahui Luas alas dan Tinggi berupa int}
+alas, tinggi : integer
+
+Algoritma
+read (alas, tinggi)
+hasil <- 1/2 * alas * tinggi
+write (hasil)

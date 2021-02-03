@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>Function</title>
+    </head>
+    <body>
+        <script>
+            //syntax dasar membuat fungsi
+            function namaFungsi (parameter){
+                document.write(parameter + '<br>')
+            }
+
+            namaFungsi ("Hi!,")
+
+            function printGoodGreeting(nama = 'santri'){
+                document.write('Halo ' + nama + '<br>' )
+            }
+
+            printGoodGreeting();        // Halo santri
+            
+            //syntax untuk parameter lebih dari satu
+            function identitas(nama, usia){
+                document.write('nama saya ' + nama + ' usia saya ' + ' tahun<br>')
+            }
+            identitas('The Yat', 63)
+            
+            //syntax dengan jumalah parameter tidak tentu
+            function grupName(person1, ...other){
+                document.write(person1 + ',' + other.join(','))
+            }
+            grupName('Steven', 'bambang', 'Wandi', 'Dio<br>')
+
+            //syntax return fungsi
+            function namaSaya(params){
+                return document.write(params) // mengembalikan string
+                document.write('Siapa saya') // tidak akan dijalankan
+            }
+            namaSaya('hafif<br>')
+            
+            //Latihan
+            function tambah (a,b){
+                return a + b;
+            }
+
+            function kali (a,b){
+                return a*b;
+            }
+
+            var a = 6;
+            var b = 7;
+            var hasil = kali(tambah(a,b), tambah(4,5));
+            document.write (hasil);
+//Kondisi dimana parameter dan argument tidak sesuai
+//Kondisi tersebut menjadi, jika parameter lebih sedikit dari argument, maka argument kelebihannya akan diabaikan
+            
+            //contoh
+            var coba = tambah(5,10,20);
+            document.write(`${coba} <br>`);
+// jika parameter lebih banyak dari argument, amaka parameter kelebihannya akan diisidengan nilai "undefined"
+        
+            //contoh
+            function kurang(a,b,c){
+                return a-b;
+            }
+
+             var coba = kurang(5,10);
+            document.write(`${coba}<br>`)
+
+            //Memanggil function menggunakan tipe data array
+            var arguments = [5,10,20,"hi",false]
+
+            function tambah(){
+                return arguments;
+            }
+            var coba = tambah(5,10,20,"hi", false)
+            document.write(coba);
+
+            //Bagaimana dengan kondisi ketika user menginputkan data lebih dari 1 atau tidak terhingga
+        function plus(){
+            var hasil = 0;
+            for (var i=0; i<arguments.length; i++){
+                hasil += arguments[i];
+            }
+        return hasil;
+        }
+        var coba = tambah(1,2,3);
+        document.write(coba);
+        //Variabel Scope
+        // variabel ini memiliki 2 jenis, yaitu block scope dan juga function scope
+        // block scope ini merupakan scope yang dimana ketika dalam 1 block dia tidak bisa diakses diluar
+             //contoh
+
+        function BlockScope(){
+            var a = 2;
+            console.log(a);
+        }
+         BlockScope() // hasil yang betul
+
+         function BlScope(){
+             var a = 2;
+        }
+        console.log(BlScope()); //hasil salah karena var dalam block fungsi tidak bisa diakses di luar. hanya bisa diakses di dalam block
+
+        //Bagaimana cara menamnggil var dari luar dengan adanya var sejenis di dalam block
+        //contoh
+
+        var z = 90;
+        function combine (){
+            var z = 89;
+            console.log(z)
+        }
+        combine() // var z akan diakses di dalam block
+
+        function incombine(){
+            var z = 89;
+            console.log(window.z)
+        }
+
+        incombine() // var z akan diakses yang berada di luar block
+
+        var b = 7;
+        function stackcombine (){
+            b = 52; //tanpa ada huruf var ini bisa diakses di luar function
+        }
+        stackcombine();
+        console.log(b);
+
+            //Bab Rekursif
+        function cetakAngka(n) {
+            if (n===0){
+                return; //fungsi ini digunakan sebagai pemberhenti kondisi if
+            } // ini yang disebut dengan base case, bila tidak dikasih base  case ini maka yang terjadi fungsi akan looping hingga batas maximum
+            console.log(n);
+            cetakAngka(n-1);
+        }
+
+        cetakAngka(10);
+        cetakAngka()
+
+        function faktorial(n){
+            if (n === 0) return 1;
+            return n * faktorial(n-1);
+        }
+        faktorial(5)
+
+            //function declaration
+            function namaDiri(nama){
+                alert (`halo ${nama}`);
+            }
+
+            namaDiri('Dio')
+
+            //function expression
+            var name = function (nama){
+                alert (`halo ${nama}`);
+            }
+            namaDiri('Dio')
+
+            document.write(name)
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Looping</title>
+</head>
+<body>
+    <script>
+        for (y=0; y<=10; y++){
+            for (x=0; x<=10; x++){
+                if (x == y) {
+                    document.write("*")
+                }
+                else {
+                    document.write("-")
+                }
+            }
+            document.write("<br>")
+        }
+
+        for (y=0; y<=10; y++){
+            for (x=0;x<=10; x++){
+                if (10 - x==y) {
+                    document.write("*")
+                } else {
+                    document.write("-")
+                }
+            }
+            document.write("<br>")
+        }
+
+        for (y=0; y<=10; y++){
+            for (x=0; x<=10; x++){
+                if (x==y || 10 - x==y){
+                    document.write("*")
+                } else {
+                    document.write("-");
+                }
+            }document.write("<br>")
+        }
+            document.write("<br><br><br>");
+        for (i=1; i<=50; i++) {
+            if (i%5==4) {
+                document.write(i)
+            }
+        }
+    </script>
+</body>
+</html>

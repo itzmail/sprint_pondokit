@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Masukan Nilai");
+        var hasil = ""
+
+        switch (true){
+            case nilai>90:
+            hasil = "grade A";
+            break;
+            
+            case nilai>80:
+            hasil = "grade B+";
+            break;
+
+            case nilai>70:
+            hasil = "grade B";
+            break;
+
+            default:
+            hasil = "grade F";
+            break;
+        }
+
+        document.write(hasil)
+    </script>
+</body>
+</html>

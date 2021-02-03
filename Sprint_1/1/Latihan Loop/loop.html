@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <script>
+        for (y=0; y<10; y++){
+            for (x=0; x<10; x++){
+                if (x == y) document.write('*');
+                else document.write("-");
+            }
+            document.write ("<br>")        
+        }
+        document.write("<br><br><br>")
+
+        
+        for (y=0; y<10; y++){
+            for (x=0; x<10; x++){
+                if (10 - x == y) document.write('*');
+                else document.write("-");
+            }
+            document.write ("<br>")        
+        }
+        document.write("<br><br><br>")
+        
+        for (y=0; y<=10; y++){
+            for (x=0; x<=10; x++){
+                if (x == y || 10 - y==x) document.write('*');
+                else document.write("-");
+            }
+            document.write ("<br>")        
+        }
+        document.write("<br><br><br>")
+        
+        for (y=0; y<10; y++){
+            for (x=0; x<10; x++){
+                if (x == y || 10 - y==x || y == 5 || x == 5) document.write('*');
+                else document.write("-");
+            }
+            document.write ("<br>")        
+        }
+        document.write("<br><br><br>")
+
+        for (y=0; y<10; y++){
+            for (x=0; x<10; x++){
+                if (x <= y) document.write("*");
+                else document.write("-");
+            }
+            document.write ("<br>") 
+        }
+        document.write("<br><br><br>")
+
+        for (y=0; y<10; y++){
+            for (x=0; x<10; x++){
+                if (10 - x <= y) document.write("*");
+                else document.write("-");
+            }
+            document.write ("<br>") 
+        }
+        document.write("<br><br><br>")
+
+        // for (y=0; y<=10; y++){
+        //     for (x=0; x<=10; x++){
+        //         if (y==x || (x+y==10)) {
+        //             document.write("* ");
+        //         }
+        //         else if ((x+y) <= 9 && x < y ){
+        //             document.write("+ ")
+        //         }
+        //         else if ((x+y) >= 11 && x > y) {
+        //             document.write("+ ")
+        //         }
+        //         else document.write("- ")
+        //     }
+        //     document.write ("<br>") 
+        // }
+        // document.write("<br><br><br>")
+
+        // for (y=0; y<=10; y++){
+        //     for (x=0; x<=10; x++){
+        //         if (x==1 && (y*x<=5)){ 
+        //             document.write("* ");
+        //         }
+        //         else if (y==5){
+        //             document.write("+ ")
+        //         }
+        //         else if (x==9 && (y*x>=45)) {
+        //             document.write("+ ")
+        //         }
+        //         else if (y==9){
+        //             document.write("+ ")
+        //         }
+        //         else {
+        //             document.write("-");
+        //         }
+        //         99
+        //     }
+        //     document.write ("<br>") 
+        // }
+        // document.write("<br><br><br>")
+
+        for (y=1; y<=10; y++){
+            for (x=1; x<=10; x++){
+                if (x == y) document.write(x*2-1);
+                else document.write("- ");
+            }
+            document.write ("<br>")        
+        }
+        document.write("<br><br><br>")
+
+        for (y=1; y<10; y++){
+            for (x=1; x<10; x++){
+                if (x>=y) document.write(x);
+                else document.write("_")
+            }document.write("<br>")
+        }document.write("<br><br>")
+
+        for (y=1; y<10; y++){
+            for (x=1; x<10; x++){
+                if (10-x <= y) document.write(x);
+                else document.write("_")
+            }document.write("<br>")
+        }document.write("<br><br>")
+
+        for (y=1; y<10; y++){
+            for (x=1; x<10; x++){
+                if (10-x >= y && x<=y || 10-x <= y && x>=y) document.write(x);
+                else document.write("_")
+            }document.write("<br>")
+        }document.write("<br><br>")
+
+        for (y=1; y<10; y++){
+            for (x=1; x<10; x++){
+                if (x+y >= 10 && x<=y || 10-x <= y && x>=y) document.write(x);
+                else document.write("_")
+            }document.write("<br>")
+        }document.write("<br><br>")
+        </script>
+</body>
+</html>

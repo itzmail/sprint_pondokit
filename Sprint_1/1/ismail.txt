@@ -1,0 +1,5 @@
+Mulai
+Masukan Bilangan Bulat
+Bilangan Bulat tersebut dibagi 2 dengan operasi sisa bagi
+Hasil bagi bilangan tersebut menghasilkan bilangan genap atau ganjil
+selesai

@@ -1,0 +1,7 @@
+Jenis-jenis Bahasa Pemrograman
+1. Bahasa tingkat tinggi
+bahasa ini merupakan bahasa yang mudah dipahami oleh kita (manusia) tetapi bagi mesin komputer membutuhkan waktu untuk memahami bahasa di tingkat tersebut
+2. Bahasa Tingkat Menengah
+bahasa ini merupakan bahasa yang mendekati dengan bahasa mesin. jadi maksudnya terdapat unsur bahasa yang mudah dipahami oleh manusia dan juga terdapat unsur bahasa yang mudah dipahami oleh bahasa mesin
+3. Bahasa Tingkat Rendah
+Bahasa tingkat ini merupakan kebalikan dari bahasa tingkat tinggi. jadi bahasa ini ialah bahasa yang mudah dipahami bagi mesin tetapi bagi manusia susah untuk memahami bahasa tingkat rendah

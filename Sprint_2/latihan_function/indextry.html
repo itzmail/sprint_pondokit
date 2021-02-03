@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function siapakamu (nama = "Anonim") {
+            document.write('Hi ' + nama);
+        }
+        siapakamu();
+        document.write("<br><br>")
+
+        function divismobile (person1, ...other){
+            document.write(person1 + ',' + other.join(', '))
+        }
+
+        divismobile("Komarudin", " Faishal", "fadhil", "ismail", "wira")
+        document.write("<br><br>")
+
+        function returnfungsi (parameter){
+            return console.log(parameter)
+        }
+
+        returnfungsi(123)
+
+        function penjumlahan (tulisan){
+            return alert (`Selamat datang ${tulisan}`)
+            document.write (`Selamat Datang ${tulisan}`)
+        }
+
+        penjumlahan("Ismail");
+        
+    </script>
+</body>
+</html>

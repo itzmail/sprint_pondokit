@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Object</title>
+</head>
+<body>
+    <script>
+        const characters = [
+  {name: "Ninja Ken", age: 14},
+  {name: "Guru Domba", age: 100},
+  {name: "Baby Ninja Ben", age: 5},
+];
+
+document.write(characters.length + "<br>");
+
+// Selesaikan loop for dibawah
+for (let i=0; i<characters.length;i++) {
+  document.write("--------------------" + "<br>");
+  
+  // Tentukan nilai constant character
+  const character = characters[i];
+  
+  // Print "Nama saya adalah ____"
+  document.write(`Nama saya adalah ${character.name}<br>`);
+  
+  // Print "Saya berusia ____ tahun"
+  document.write(`Saya berusia ${character.age} tahun<br>`);
+}
+
+    </script>
+</body>
+</html>

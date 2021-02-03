@@ -1,0 +1,13 @@
+Program MenghitungLuasLingkaran
+
+Deklarasi
+jari_jari : int
+phi : 3.14
+hasil : float
+
+Algoritma
+read (jari_jari, phi)
+hasil <- phi * jari_jari * jari_jari
+write (hasil)
+
+end

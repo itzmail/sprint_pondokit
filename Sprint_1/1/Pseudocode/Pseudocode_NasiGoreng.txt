@@ -1,0 +1,21 @@
+#MasakNasiGoreng
+
+Deklarsi
+&bahan = string
+
+Algoritma
+read (bahan)
+write(minyak_dipanaskan)
+write (tuang &bahan dalam wajan)
+write (Aduk hingga merata)
+
+JIKA sudah matang {
+    print (sajikan sudah matang?);
+}
+
+JIKATIDAK belum matang {
+    print (aduk hingga merata);
+}
+
+hasil (sudah matang);
+end
