@@ -57,14 +57,14 @@ console.log(returnedTarget)
         //fungsi dari .assign ini menunjukkan bahwa object source disalin kedalam object target dimana namapropertied yang ddama akan digantikan oleh object source. dan object yang dikemabalikan adalah object target
 
 // Object.create digunakan untuk membuat object baru
-const siswa = {
+const santri = {
     muslim: false,
     perkenalan:function(){
         console.log(`nama saya ${this.nama} Apakah saya muslim ? ${this.muslim}`);
     }
 };
 
-const saya = Object.create(siswa);
+const saya = Object.create(santri);
 
 saya.nama = `ismail`;
 saya.muslim = true;

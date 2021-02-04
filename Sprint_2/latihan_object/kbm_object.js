@@ -35,3 +35,26 @@ student.nama = "Bambang"
 
 console.log(student.nama)
 console.log("=========================================================================")
+
+const target={a:1,b:2};
+const source={b:target.a == target.b, d:5};
+
+const returnedTarget = Object.assign(target,source);
+
+console.log(target)
+console.log(source)
+console.log(returnedTarget)
+console.log("=========================================================================")
+
+const santri = {
+    muslim: false,
+    perkenalan:function(){
+        console.log(`nama saya ${this.nama} Apakah saya muslim ? ${this.muslim}`);
+    },
+};
+
+const saya = Object.create(santri);
+
+saya.nama = `ismail`;
+saya.muslim = true;
+saya.perkenalan();
