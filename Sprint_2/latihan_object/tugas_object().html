@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jual Mobil</title>
+</head>
+<body>
+    <script>
+        var jualMobil = {
+            iklan:function(){
+                document.write(`Bu, saya ${this.nama}, Jual Mobil ${this.merek}, tahun ${this.tahun}, bekas`)
+            }
+        };
+
+        var beliMobil = Object.create(jualMobil);
+
+        beliMobil.nama = "Tompel";
+        beliMobil.merek = "Lamborgini";
+        beliMobil.tahun = 2022;
+        beliMobil.iklan();
+    </script>
+</body>
+</html>
