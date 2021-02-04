@@ -127,14 +127,14 @@
 
         for (y=1; y<10; y++){
             for (x=1; x<10; x++){
-                if (10-x >= y && x<=y || 10-x <= y && x>=y) document.write(x);
+                if (y+x >= 10 && x<=y || x+y <= 10 && x>=y) document.write("*");
                 else document.write("_")
             }document.write("<br>")
         }document.write("<br><br>")
 
         for (y=1; y<10; y++){
             for (x=1; x<10; x++){
-                if (x+y >= 10 && x<=y || 10-x <= y && x>=y) document.write(x);
+                if (x+y >= 10 && x>=y || x+y <= 10 && x<=y) document.write("*");
                 else document.write("_")
             }document.write("<br>")
         }document.write("<br><br>")
