@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balok</title>
+</head>
+<body>
+    <script>
+        document.write(
+            "p : 56",
+            "l : 78",
+            "t : 45"
+            )
+            document.write("<br><br>")
+        function VolumeBalok (p,l,t){
+            document.write(p*l*t);
+        }
+
+        document.write("Volume Balok :")
+        VolumeBalok(56,78,45); 
+        document.write("<br><br><br>")
+
+        function LuasPermukaanBalok (p,l,t){
+            document.write(2*(p*l)+2*(p*t)+2*(l*t));
+        }
+
+        document.write("Luas Permukaan Balok :")
+        LuasPermukaanBalok(56,78,45);
+    </script>
+</body>
+</html>
