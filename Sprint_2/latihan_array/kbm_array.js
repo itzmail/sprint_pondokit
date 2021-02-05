@@ -52,6 +52,7 @@ sayur.pop()
 
 console.log(sayur)
         //bagaimana cara menghapus index di tengah-tengah?
+console.log("=========================================================================")
 
 var fruits = ['apel', 'jeruk', 'jambu']
 fruits.splice(3, 0, ' telur')

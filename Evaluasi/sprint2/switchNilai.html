@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cek Nilai Kamu</title>
+</head>
+<body>
+    <script>
+        var input = prompt("Masukkan nilai kamu : ",);
+        var hasil = ""
+
+        switch(true){
+            case input>90:
+                hasil = 'garde A';
+                break;
+            case input>80:
+                hasil = 'grade B+';
+                break;
+            case input>70:
+                hasil = 'grade B';
+                break;
+            default :
+                hasil = "grade F"
+        }
+
+        document.write("kamu mendapatkan " + hasil)
+    </script>
+</body>
+</html>
