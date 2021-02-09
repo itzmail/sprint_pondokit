@@ -220,54 +220,8 @@ console.log(website);
     kita melakukan asyncronous javascript kita dapat dengan mudah untuk mendapatkan 
     hasil apakah event yang kita lakukan berhasil dilakukan atau gagal dilakukan  */
 
-const fs = require('fs')
-    //contoh promise untuk async
-const promiseAsync = new promiseAsync((resolve,reject)=>{
-    fs.readFile('A.txt','utf8',(err,res)=>{
-        if(err)reject(err);
-        resolve(res);
-    });
-})
-.then(res=>console.log('hasil async:',res))
-.catch(err=>console.log('error',err))
-    //contoh promise untuk async
-const promiseSync = new Promise(resolve=>{
-    resolve(hasil);
-})
-.then(res=>console.log('hasil sync.',res))
-
-    /* Memanfaatkan API “then” dan “catch” Sebuah object Promise memiliki metode 
-    fungsi then dan catch yang masing-masing memiliki fungsi untuk mengolah hasil 
-    sukses dan gagal. */
-        const fs = require('fs');
-        const promiseA = new Promise((resolve, reject) => {
-        fs.readFile('A.txt', 'utf8', (err, res) => {
-        if (err) reject(err);
-        resolve(res);
-        });
-        });
-        const promiseB = new Promise((resolve, reject) => {
-        fs.readFile('B.txt', 'utf8', (err, res) => {
-        if (err) reject(err);
-        resolve(res);
-        });
-        });
-        const promiseFail = new Promise((resolve, reject) => {
-        fs.readFile('XXX.txt', 'utf8', (err, res) => {
-        if (err) reject(err);
-        resolve(res);
-        });
-        });
-        // promiseA
-        .then(resA => {
-        console.log('hasil A: ', resA);
-        return promiseB;
-        })
-        .then(resB => {
-        console.log('hasil B: ', resB);
-        return promiseFail;
-        })
-        .then(resFail => {
-        console.log('hasil fail: ', resFail);
-        })
-        .catch(err => console.log('error: ', err));
+    const promise = () => {
+        fetch("https://jsonplaceholder.typicode.com/todos/1")
+        .then(respon => respon.json())
+        .catch(json => console.log(json))
+    }

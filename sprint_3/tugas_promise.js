@@ -6,3 +6,9 @@ const getData = () => {
 }
 
 getData()
+
+const promise = () => {
+        fetch("https://jsonplaceholder.typicode.com/todos/1")
+        .then(respon => respon.json())
+        .catch(json => console.log(json))
+    }
