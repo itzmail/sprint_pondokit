@@ -3,6 +3,6 @@ const chain = randomNumbers
             .filter((a)=>a>=65)
             .map((a)=>a/2)
             .filter((a)=>a<40)
-            .map((a)=>a/randomNumbers.length)
+            .map((a)=>randomNumbers.length/a)
             .reduce((acc,cur)=>(acc/2)+cur)
 console.log(chain);
