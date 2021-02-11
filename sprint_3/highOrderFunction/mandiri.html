@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Asyncronous & Syncronous</title>
+</head>
+<body>
+    <script>
+/*        // Syncronous Callback #menggunakan function biasa
+        function tampilkanPesan(callback){
+            const nama = prompt("Masukkan nama : ")
+            callback(nama);
+        } //ini merupakan High Order Function
+
+        function halo (nama){
+            alert(`Selamat Datang ${nama}`);
+        } // function ini dijadikan sebagai parameter dan ini merupakan callback function
+
+        tampilkanPesan(halo);
+
+        // Syncronous Callback #menggunakan anonymous function
+        function tampilkanPesan(callback){
+            const nama = prompt("Masukkan nama : ")
+            callback(nama);
+        }
+
+        tampilkanPesan(nama => alert(`Selamat datang ${nama}`)); */
+
+        const negara = [{
+            negara : "USA",
+            kasus : 54,
+            penduduk : 89
+        },
+        {
+            negara : "Indonesia",
+            kasus : 10,
+            penduduk : 90
+        },
+        {
+            negara : "Jepang",
+            kasus : 14,
+            penduduk : 87
+        },];
+
+        // console.log("mulai");
+        // negara.forEach(m=>console.log(m.kasus)); //ini merupakan High Order Function.
+        // /* (m=>console.log(m.kasus)) ini juga merupakan callbackfunction. jadi High Order Function itu sudah pasti terdapat callback function*/
+        // console.log("berhenti")
+
+        //Modified to Sycncronous Callback 
+        console.log("mulai")
+        negara.forEach(m=>{
+            for(let i=0; i < 10000000; i++){
+                let date = new Date();
+            }
+            console.log(m.kasus)
+        });
+    </script>
+</body>
+</html>
