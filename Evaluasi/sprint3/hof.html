@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Callback Function</title>
+</head>
+<body>
+    <script>
+        function santriProgrammer(nama,status,asal){
+            console.log(`nama santri ${nama} berasal dari kota ${asal}`);
+            status();
+        }
+
+        function status(){
+            alert("Status nya adalah Santri")
+        }
+
+        santriProgrammer("Rahmad",status, "Medan");
+    </script>
+</body>
+</html>

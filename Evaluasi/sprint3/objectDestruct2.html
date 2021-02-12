@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Callback Function #2</title>
+</head>
+<body>
+    <script>
+        function mentorProgrammer(nama,status,asal){
+            nama();
+            status();
+            asal();
+        }
+
+        function nama(){
+            console.log(`Nama Mentor Wandi Pratama`);
+        }
+
+        function status(){
+            console.log(`Status nya Santri`);
+        }
+
+        function asal(){
+            console.log(`Berasal dari kota Prabumulih`);
+        }
+
+        mentorProgrammer(nama,status,asal)
+    </script>
+</body>
+</html>
