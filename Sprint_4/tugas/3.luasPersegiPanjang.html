@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Function Luas Persegi Panjang</title>
+</head>
+
+<body>
+    <h2>Luas Persegi Panjang</h2>
+    <Script>
+        let panjang = parseInt(prompt('Masukkan ukuran panjang : '));
+        let lebar = parseInt(prompt('Masukkan ukuran Lebar : '));
+        let luas = 0;
+
+        let luasPersegiPanjang = (panjang, lebar) => {
+            luas = panjang * lebar;
+            document.write(luas)
+        }
+        document.write(`Panjang : ${panjang} <br>`);
+        document.write(`Lebar : ${lebar} <br>`)
+        document.write('Luas : ');
+        luasPersegiPanjang(panjang, lebar)
+    </Script>
+    <br>
+    <a href="./index.html">Kembali ke Home</a>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Object Destructuring</title>
+</head>
+
+<body>
+    <h2>Object Destructuring</h2>
+    <script>
+        const asalSantri = {
+            "Sidik": "Lampung",
+            "Wandi": "Prabumulih",
+            "Rahmad": "Medan",
+            "Usamah": "Ceribon",
+            lain: {
+                "Syofyan": "Purwokerto",
+                "Aldi": "Kendari",
+                "Kardi": "Lombok"
+            }
+        };
+        const {
+            Sidik,
+            Wandi,
+            Rahmad,
+            Usamah,
+            lain
+        } = asalSantri;
+
+        console.log(Sidik, Wandi, Rahmad, Usamah);
+        console.log(lain)
+    </script>
+</body>
+
+</html>
