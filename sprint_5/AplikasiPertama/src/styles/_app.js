@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     inputForm: {
       height: 50, 
       width: '100%',
-      borderWidth: 2,
+      borderBottomWidth: 2,
       borderRadius: 15,
       marginVertical: 10
     },
