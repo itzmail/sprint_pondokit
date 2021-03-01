@@ -1,0 +1,30 @@
+import React from 'react';
+import {View, Text, TextInput, TouchableOpacity, Touchable} from 'react-native';
+import {styles} from './src/styles/_app';
+
+class App extends React.Component {
+  render () {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.title}>Hey.</Text>
+        <Text style={styles.title}>Login Now.</Text>
+        <View style={styles.ifYou}>
+          <Text style={styles.if}>If you are new / </Text>
+          <Text>Create New</Text>
+        </View>
+        <View style={styles.inputan}>
+          <TextInput placeholder="Email" style={styles.kolomINput} />
+          <TextInput placeholder="Password" style={styles.kolomINput} />
+          <View style={styles.forget}>
+            <Text>Forget Password? /</Text>
+            <Text>Reset</Text>
+          </View>
+        </View>
+        <TouchableOpacity style={styles.login} onPress={()=> alert()}>
+          <Text style={styles.titleLogin}>Login</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+}
+export default App;
