@@ -1,43 +1,44 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    title: {
-    fontWeight: 'bold',
-    margin: 30
+    container : {
+        flex: 1,
+        margin : 50
     },
-    subTitle: {
-      fontSize: 45,
-      fontWeight: 'bold'
+    title : {
+        fontSize: 30,
+        fontWeight: 'bold'
     },
-    newMember: {
-      flexDirection: 'row',
-      margin: 15
+    ifYou : {
+        flexDirection: 'row'
     },
-    titleForm: {
-      fontSize: 30,
+    if:{
+        color: "rgba(0,0,0,0.5)"
     },
-    inputForm: {
-      height: 50, 
-      width: '100%',
-      borderBottomWidth: 2,
-      borderRadius: 15,
-      marginVertical: 10
+    image: {
+        marginTop: 20
     },
-    img: {
-      marginVertical: 20,
-      marginHorizontal: '10%',
+    inputan : {
+        marginTop: 9,
+        marginBottom: 20
     },
-    reset: {
-      flexDirection: 'row',
-      margin: 15
+    kolomInput : {
+        marginTop: 0,
+        marginBottom: 0,
     },
-    login: {
-      backgroundColor: 'blue',
-      height: 50,
-      width: '80%',
-      marginLeft: 45,
-      justifyContent: 'center',
-      alignItems: 'center',
-      borderRadius: 10
+    forget : {
+        flexDirection: 'row'
+    },
+    login:{
+        backgroundColor: 'blue',
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 5
+    },
+    titleLogin : {
+        fontSize: 20,
+        color: '#fff',
+        fontWeight:'bold',
     }
-  })
+})

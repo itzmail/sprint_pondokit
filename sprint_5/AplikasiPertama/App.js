@@ -1,51 +1,55 @@
 import React from 'react';
-import {Text, View, Image, TextInput, ScrollView, Button, Alert, TouchableOpacity} from 'react-native';
-import { styles } from './src/styles/_app'
+import {View, Text, TextInput, TouchableOpacity, ScrollView, Image} from 'react-native';
+import {styles} from './src/styles/_app';
+import Headers, {SubHeaders} from './src/components/Headers';
 
-const App = () => {
-  return(
-    <View>
+
+class App extends React.Component {
+  state = {
+    email: '',
+    pass: ''
+  }
+  render () {
+    return (
       <ScrollView>
-      <View style={styles.title}>
-        <Text style={styles.subTitle}>Hey,</Text>
-        <Text style={styles.subTitle}>Login Now</Text>
-      </View>
-    
-      <Image source={require('./src/assets/image/react.png')} 
-      style={styles.img} />
+      <View style={styles.container}>
+        <Headers title='Selamat Datang' />
+        <SubHeaders title='kembali' />
 
-      <View style={styles.newMember}>
-        <Text style={{color: 'rgba(0,0,0,0.3)'}}>Are you new? </Text>
-        <Text style={{color: 'blue', fontWeight: '900'}}>Create account</Text>
-      </View>
+        <Text style={styles.title}>Hey.</Text>
+        <Text style={styles.title}>Login Now.</Text>
 
-      <View>
-        <Text style={styles.titleForm}>Email</Text>
-        <TextInput 
-          style={styles.inputForm}
-          placeholder='Masukkan email anda'
-          onChangeText={(a) => console.log(a)}
-        />
+        <View style={styles.ifYou}>
+          <Text style={styles.if}>If you are new / </Text>
+            <TouchableOpacity>
+              <Text>Create New</Text>
+            </TouchableOpacity>
+        </View>
+          <Image source={require('./src/assets/image/react.png')} style={styles.image}/>
+          <Text>{this.state.email}</Text>
+          <Text>{this.state.pass}</Text>
+        <View style={styles.inputan}>
+          <TextInput placeholder="Email" style={styles.kolomINput} onChangeText={(a) => this.setState({email: a})}/>
+          <TextInput placeholder="Password" style={styles.kolomINput } onChangeText={(b) => this.setState({pass: b})} secureTextEntry />
 
-        <Text style={styles.titleForm}>Password</Text>
-        <TextInput 
-          style={styles.inputForm}
-          placeholder='Masukkan password anda'
-          onChangeText={(a) => console.log(a)}
-          secureTextEntry={true}
-        />
-      </View>
-      <View style={styles.reset}>
-          <Text>Reset / </Text>
-          <Text>change password</Text>
-      </View>
+          <View style={styles.forget}>
+            <TouchableOpacity>
+              <Text>Forget Password? /</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text>Reset</Text>
+            </TouchableOpacity>
+          </View>
 
-      <TouchableOpacity style={styles.login}>
-        <Text>Login</Text>
-      </TouchableOpacity>
+        </View>
+
+        <TouchableOpacity style={styles.login} onPress={()=> alert()}>
+          <Text style={styles.titleLogin}>Login</Text>
+        </TouchableOpacity>
+      
+      </View>
       </ScrollView>
-    </View>
-  )
+    );
+  }
 }
-
 export default App;
