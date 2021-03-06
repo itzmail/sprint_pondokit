@@ -15,7 +15,7 @@ const StyleDashboard = StyleSheet.create({
         height: 20,
         width: 20,
         position: 'absolute',
-        left: 290,
+        left: 170,
         top: 10
     },
     popup: {

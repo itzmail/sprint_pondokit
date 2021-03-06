@@ -9,8 +9,8 @@ class Splashscreen extends Component {
                 <View>
                     <Text style={styles.title}>Quran App</Text>
                     <View style={styles.subTitle}>
-                        <Text style={{alignSelf: 'center'}}>Learn Quran &</Text>
-                        <Text style={{alignSelf: 'center'}}>Recite Once Everyday</Text>
+                        <Text style={{alignSelf: 'center', color: 'grey'}}>Learn Quran &</Text>
+                        <Text style={{alignSelf: 'center', color: 'grey'}}>Recite Once Everyday</Text>
                     </View>
                 </View>
                 <View style={{alignItems: 'center', borderWidth: 1, borderRadius: 20, backgroundColor: '#b60cd4'}}>
