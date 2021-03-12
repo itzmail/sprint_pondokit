@@ -2,7 +2,8 @@ import {StyleSheet} from 'react-native';
 
 const StyleDashboard = StyleSheet.create({
     container: {
-        margin: 15
+        margin: 15,
+        flexWrap: 'wrap'
     },
     header: {
         flexDirection: 'row',
