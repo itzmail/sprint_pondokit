@@ -12,10 +12,10 @@ import Splashscreen from './src/screen/splashScreen';
 export class App extends Component {
   render() {
     return (
-    <NavigationContainer>
+      <NavigationContainer>
       <Splashscreen />
       <Main />
-    </NavigationContainer>
+      </NavigationContainer>
     )
   }
 }

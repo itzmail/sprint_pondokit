@@ -3,7 +3,7 @@ import { View, Text, ActivityIndicator } from 'react-native'
 
 function Splash () {
     return (
-        <View style={{flex: 1, backgroundColor: '#1689b4', justifyContent: 'center'}}>
+        <View style={{backgroundColor: '#1689b4', justifyContent: 'center', width: '100%', height: '100%'}}>
             <Text style={{fontSize: 30, textAlign: 'center', color: 'white', fontWeight: 'bold'}}>Woke App</Text>
             <ActivityIndicator color='white' size='large' />
         </View>
