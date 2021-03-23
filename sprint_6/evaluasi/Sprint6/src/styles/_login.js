@@ -13,16 +13,15 @@ const Styles = StyleSheet.create({
         marginBottom: 25
     },
     textInput: {
-        fontSize: 18,
+        height: 18,
         color: 'white'
     },
     input: {
-        borderBottomWidth: 1,
+        borderWidth: 1,
         borderBottomColor: 'white',
-        height: 20,
+        height: 30,
         color: 'black',
         marginBottom: 20,
-        fontSize: 10
     },
     buttonSignIn: {
         borderWidth: 0,

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import Styles from '../styles/_register';
 
-const Register = ({navigation}) => {
+const Register = () => {
     return (
         <View style={Styles.container}>
             <View style={{margin: 38}}>
